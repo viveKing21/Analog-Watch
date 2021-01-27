@@ -1,0 +1,84 @@
+
+.watch
+{
+	height:200px;
+	width:200px;
+	background:white;
+	background-size:cover;
+	border-radius:200px;
+	margin:auto;
+    position:relative;
+    margin-top:100px;
+    border:3px solid black
+
+}	
+
+.watch div:nth-child(1),.watch div:nth-child(2),.watch div:nth-child(3)
+{
+	--rotation:0deg;
+	height:50px;
+	width:1.5px;
+	background:#ff5151;
+	margin:auto;
+	animation:60s run infinite;
+	transform-origin:bottom;
+	animation-timing-function:linear;
+	position:absolute;
+	bottom:50%;
+	left:calc(50% - 0.75px);
+	border-top-left-radius:50px;
+	border-top-right-radius:50px;
+	transform:rotate(var(--rotation));
+	
+}
+
+.watch div:nth-child(2)
+{
+	background:#323232;
+	width:2px;
+	height:45px;
+	left:calc(50% - 1px);
+}
+.watch div:nth-child(3)
+{
+	background:#323232;
+	width:3px;
+	height:35px;
+	left:calc(50% - 1.5px);
+}
+.watch div:nth-child(3)::after
+{
+	content:"";
+	position:absolute;
+	height: 5px;
+	width:5px;
+	background:#323232;
+	bottom:-2.5px;
+	border-radius:100%;
+	left:-1px;
+
+}
+
+@keyframes 
+{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}
+}
+.num
+{
+	position:absolute;
+	height:100%;
+	width:100%;
+	font-size:18px
+}
+.num span
+{
+
+
+  position:absolute;
+  left:calc(50% - 9px)
+}
+.num:nth-child(4)
+{
+	background:
+}
